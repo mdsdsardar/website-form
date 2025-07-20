@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <header><h1>Demo Form</h1></header>
+    <form action="/" method="get">
+      <section>
+        <h2>Please Enter your Details</h2>
+        <ul>
+          <li>
+            <label for="username">Please enter your username</label>
+            <input type="text" name="user name" id="username" required />
+          </li>
+          <li>
+            <label for="useremail">Please enter your email id</label>
+            <input type="email" name="user email" id="useremail" required/>
+          </li>
+          <li>
+            <label for="userpassword">Please enter your password</label>
+            <input type="password" name="user-password" id="userpassword" required minlength="8"/>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Please Enter more details</h2>
+        <ul>
+          <li>
+            <label for="userage">Please enter your age</label>
+            <input type="number" step="1" name="user age" id="userage" min="18" max="50"/>
+          </li>
+          <li>
+            <label for="birthday">Please enter your birthday</label>
+            <input type="date" name="user-birthday" id="birthday" min="1991-01-01" max="2003-01-01" />
+          </li>
+          <li>
+            <label for="dropdown">Please select your favorite color</label>
+            <select name="color" id="dropdown">
+              <option value="Blue">Blue</option>
+              <option value="Green">Green</option>
+              <option value="Yellow">Yellow</option>
+            </select>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <label for="textmesssage">Please the enter the message</label>
+        <textarea name="text-messsage" id="textmesssage" required></textarea>
+      </section>
+      <section>
+        <h2>How should you want to verify your account</h2>
+        <div class="form-control-inline">
+          <input
+            type="radio"
+            name="verify"
+            id="verify-text-message"
+            value="text-messsage"
+          />
+          <label for="verify-text-message">Via text message (SMS)</label>
+        </div>
+        <div class="form-control-inline">
+          <input type="radio" name="verify" id="verify-phone" value="Phone" />
+          <label for="verify-phone">Via Phone call</label>
+        </div>
+        <div class="form-control-inline">
+          <input type="radio" name="verify" id="verify-email" value="Email" />
+          <label for="verify-email">Via Email</label>
+        </div>
+      </section>
+      <hr />
+      <section>
+        <div class="form-control-inline">
+          <input type="checkbox" id="agree-terms" name="terms" required/>
+          <label for="agree-terms">Agree to terms?</label>
+        </div>
+      </section>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

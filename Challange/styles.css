@@ -1,0 +1,62 @@
+body {
+  font-family: sans-serif;
+  background-color: rgb(205, 247, 255);
+}
+h1 {
+  text-align: center;
+  margin: 2rem;
+}
+form {
+  width: 40rem;
+  margin: auto;
+  background-color: rgb(240, 253, 254);
+  padding: 1rem;
+  box-shadow: 0 2px 8px black;
+  border-radius: 6px;
+}
+section {
+    margin-bottom: 1rem;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+label {
+  color: rgb(44, 43, 74);
+  display: block;
+  font-weight: bold;
+  font: inherit;
+  margin: 0.5rem 0;
+}
+input,
+textarea,
+select {
+  font: inherit;
+  padding: 0.5rem;
+  border: 1px solid rgb(179, 179, 253);
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+textarea {
+  resize: none;
+}
+input:focus,
+textarea:focus {
+  background-color: rgb(179, 179, 253);
+}
+.inline-control {
+    display: flex;
+}
+.inline-control label {
+    margin: 0;
+    margin-left: 0.5rem;
+}
+.inline-control input {
+    width: auto;
+}
+#form-action {
+    text-align: right;
+}
